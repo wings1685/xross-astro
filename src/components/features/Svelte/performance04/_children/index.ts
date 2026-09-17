@@ -1,0 +1,11 @@
+export { default as Child00 } from "./Child00.svelte";
+export { default as Child01 } from "./Child01.svelte";
+export { default as Child02 } from "./Child02.svelte";
+export { default as Child03 } from "./Child03.svelte";
+export { default as Child04 } from "./Child04.svelte";
+export { default as Child05 } from "./Child05.svelte";
+export { default as Child06 } from "./Child06.svelte";
+export { default as Child07 } from "./Child07.svelte";
+export { default as Child08 } from "./Child08.svelte";
+export { default as Child09 } from "./Child09.svelte";
+export { default as Child10 } from "./Child10.svelte";

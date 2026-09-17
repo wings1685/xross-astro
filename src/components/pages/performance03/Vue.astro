@@ -1,0 +1,25 @@
+---
+import { Parent, Circuit, RaceWatch, RaceComputed, RaceWatchEffect, QuantumStart, QuantumCircuit } from "@/components/features/Vue/performance03";
+import { Quantum00, Quantum01, Quantum02, Quantum03, Quantum04, Quantum05, Quantum06, Quantum07, Quantum08, Quantum09, Quantum10 } from "@/components/features/Vue/performance03/_quantumStores";
+import "./Page.sass";
+---
+<div id="performance">
+	<Parent client:load />
+	<Circuit client:load />
+	<RaceWatch client:only="vue" />
+	<RaceComputed client:only="vue" />
+	<RaceWatchEffect client:only="vue" />
+	<QuantumStart client:load />
+	<QuantumCircuit client:only="vue" />
+	<Quantum00 client:only="vue" />
+	<Quantum01 client:only="vue" />
+	<Quantum02 client:only="vue" />
+	<Quantum03 client:only="vue" />
+	<Quantum04 client:only="vue" />
+	<Quantum05 client:only="vue" />
+	<Quantum06 client:only="vue" />
+	<Quantum07 client:only="vue" />
+	<Quantum08 client:only="vue" />
+	<Quantum09 client:only="vue" />
+	<Quantum10 client:only="vue" />
+</div>

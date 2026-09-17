@@ -1,0 +1,23 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Start from "@/components/features/React/stores/Start";
+import USES from "@/components/pages/reactStores/Uses.astro";
+import Zustand from "@/components/pages/reactStores/Zustand.astro";
+import Jotai from "@/components/pages/reactStores/Jotai.astro";
+import Valtio from "@/components/pages/reactStores/Valtio.astro";
+import Legend from "@/components/pages/reactStores/Legend.astro";
+import ReduxRoot from "@/components/features/React/stores/redux/ReduxRoot";
+import Nano from "@/components/pages/reactStores/Nano.astro";
+---
+<Layout title="Stores Test">
+	<div id="performance">
+		<Start client:only="react" />
+		<USES />
+		<Zustand />
+		<Jotai />
+		<Valtio />
+		<Legend />
+		<ReduxRoot client:only="react" />
+		<Nano />
+	</div>
+</Layout>

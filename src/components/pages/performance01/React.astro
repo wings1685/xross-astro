@@ -1,0 +1,13 @@
+---
+import Anchor from "@/components/features/React/performance01/Anchor";
+import At from "@/components/features/React/performance01/At";
+import Pics from "@/components/features/React/performance01/Pics";
+import "./Page.sass";
+---
+<div id="performance">
+	<section>
+		<Anchor to="pics" client:load>スクロールします</Anchor>
+	</section>
+	<At id="pics" client:load />
+	<Pics client:visible />
+</div>

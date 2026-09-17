@@ -1,0 +1,41 @@
+---
+import Parent from "@/components/features/React/performance03/Parent";
+import Circuit from "@/components/features/React/performance03/Circuit";
+import RaceEffect from "@/components/features/React/performance03/RaceEffect";
+import RaceMemo from "@/components/features/React/performance03/RaceMemo";
+import RaceLayoutEffect from "@/components/features/React/performance03/RaceLayoutEffect";
+import QuantumStart from "@/components/features/React/performance03/QuantumStart";
+import QuantumCircuit from "@/components/features/React/performance03/QuantumCircuit";
+import Quantum00 from "@/components/features/React/performance03/_quantumStores/Quantum00";
+import Quantum01 from "@/components/features/React/performance03/_quantumStores/Quantum01";
+import Quantum02 from "@/components/features/React/performance03/_quantumStores/Quantum02";
+import Quantum03 from "@/components/features/React/performance03/_quantumStores/Quantum03";
+import Quantum04 from "@/components/features/React/performance03/_quantumStores/Quantum04";
+import Quantum05 from "@/components/features/React/performance03/_quantumStores/Quantum05";
+import Quantum06 from "@/components/features/React/performance03/_quantumStores/Quantum06";
+import Quantum07 from "@/components/features/React/performance03/_quantumStores/Quantum07";
+import Quantum08 from "@/components/features/React/performance03/_quantumStores/Quantum08";
+import Quantum09 from "@/components/features/React/performance03/_quantumStores/Quantum09";
+import Quantum10 from "@/components/features/React/performance03/_quantumStores/Quantum10";
+import "./Page.sass";
+---
+<div id="performance">
+	<Parent client:load />
+	<Circuit client:load />
+	<RaceEffect client:only="react" />
+	<RaceMemo client:only="react" />
+	<RaceLayoutEffect client:only="react" />
+	<QuantumStart client:load />
+	<QuantumCircuit client:only="react" />
+	<Quantum00 client:only="react" />
+	<Quantum01 client:only="react" />
+	<Quantum02 client:only="react" />
+	<Quantum03 client:only="react" />
+	<Quantum04 client:only="react" />
+	<Quantum05 client:only="react" />
+	<Quantum06 client:only="react" />
+	<Quantum07 client:only="react" />
+	<Quantum08 client:only="react" />
+	<Quantum09 client:only="react" />
+	<Quantum10 client:only="react" />
+</div>

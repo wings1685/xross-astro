@@ -1,0 +1,22 @@
+---
+import { Start, Effect, Parent, Memo } from "@/components/features/Vue/performance04";
+import { Quantum00, Quantum01, Quantum02, Quantum03, Quantum04, Quantum05, Quantum06, Quantum07, Quantum08, Quantum09, Quantum10 } from "@/components/features/Vue/performance04/_quantumStores";
+import "./Page.sass";
+---
+<div id="performance">
+	<Start client:load />
+	<Effect client:only="vue" />
+	<Parent client:only="vue" />
+	<Memo client:only="vue" />
+	<Quantum00 client:only="vue" />
+	<Quantum01 client:only="vue" />
+	<Quantum02 client:only="vue" />
+	<Quantum03 client:only="vue" />
+	<Quantum04 client:only="vue" />
+	<Quantum05 client:only="vue" />
+	<Quantum06 client:only="vue" />
+	<Quantum07 client:only="vue" />
+	<Quantum08 client:only="vue" />
+	<Quantum09 client:only="vue" />
+	<Quantum10 client:only="vue" />
+</div>

@@ -1,0 +1,24 @@
+---
+import { Parent, Circuit, RaceEffect, RaceDerived, QuantumStart, QuantumCircuit } from "@/components/features/Svelte/performance03";
+import { Quantum00, Quantum01, Quantum02, Quantum03, Quantum04, Quantum05, Quantum06, Quantum07, Quantum08, Quantum09, Quantum10 } from "@/components/features/Svelte/performance03/_quantumStores";
+import "./Page.sass";
+---
+<div id="performance">
+	<Parent client:load />
+	<Circuit client:load />
+	<RaceEffect client:only="svelte" />
+	<RaceDerived client:only="svelte" />
+	<QuantumStart client:load />
+	<QuantumCircuit client:only="svelte" />
+	<Quantum00 client:only="svelte" />
+	<Quantum01 client:only="svelte" />
+	<Quantum02 client:only="svelte" />
+	<Quantum03 client:only="svelte" />
+	<Quantum04 client:only="svelte" />
+	<Quantum05 client:only="svelte" />
+	<Quantum06 client:only="svelte" />
+	<Quantum07 client:only="svelte" />
+	<Quantum08 client:only="svelte" />
+	<Quantum09 client:only="svelte" />
+	<Quantum10 client:only="svelte" />
+</div>

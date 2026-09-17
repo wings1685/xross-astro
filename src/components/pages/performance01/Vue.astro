@@ -1,0 +1,11 @@
+---
+import { Anchor, At, Pics } from "@/components/features/Vue/performance01";
+import "./Page.sass";
+---
+<div id="performance">
+	<section>
+		<Anchor to="pics" client:load>スクロールします</Anchor>
+	</section>
+	<At id="pics" client:load />
+	<Pics client:visible />
+</div>

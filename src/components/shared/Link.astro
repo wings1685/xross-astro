@@ -1,0 +1,14 @@
+---
+import type { DeepGuard } from '@/_global/types/components';
+
+type Props = {
+	path: string;
+};
+const { path }: DeepGuard<Props> = Astro.props;
+const linkPath = `/${path}/`;
+const name = `${path.charAt(0).toUpperCase()}${path.substring(1)}`;
+const testId = `link-${path}`;
+---
+<p>
+	<a href={ linkPath } data-testid={ testId }>{ name }</a>
+</p>

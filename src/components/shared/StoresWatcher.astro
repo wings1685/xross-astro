@@ -1,0 +1,12 @@
+---
+import { SolidStoresWatcher } from "../features/Solid/stores";
+import { SvelteStoresWatcher } from "../features/Svelte/stores";
+import { VueStoresWatcher } from "../features/Vue/stores";
+import "./StoreWatcher.sass";
+---
+
+<div id="watcher">
+	<SolidStoresWatcher client:only="solid" />
+	<SvelteStoresWatcher client:only="svelte" />
+	<VueStoresWatcher client:only="vue" />
+</div>

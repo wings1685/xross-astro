@@ -1,0 +1,22 @@
+---
+import { Start, Effect, Parent, Memo } from "@/components/features/Solid/performance04";
+import { Quantum00, Quantum01, Quantum02, Quantum03, Quantum04, Quantum05, Quantum06, Quantum07, Quantum08, Quantum09, Quantum10 } from "@/components/features/Solid/performance04/_quantumStores";
+import "./Page.sass";
+---
+<div id="performance">
+	<Start client:load />
+	<Effect client:only="solid" />
+	<Parent client:only="solid" />
+	<Memo client:only="solid" />
+	<Quantum00 client:only="solid" />
+	<Quantum01 client:only="solid" />
+	<Quantum02 client:only="solid" />
+	<Quantum03 client:only="solid" />
+	<Quantum04 client:only="solid" />
+	<Quantum05 client:only="solid" />
+	<Quantum06 client:only="solid" />
+	<Quantum07 client:only="solid" />
+	<Quantum08 client:only="solid" />
+	<Quantum09 client:only="solid" />
+	<Quantum10 client:only="solid" />
+</div>
