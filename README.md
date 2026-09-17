@@ -6,21 +6,21 @@
 
 ## Stacks
 
-─ Astro 6.3.8
+- Astro 6.3.8
 
-─ Astro Solid 6.0.1
-─ Astro Svelte 8.1.2
-─ Astro React 5.0.5
-─ Astro Vue 6.0.1
+- Astro Solid 6.0.1
+- Astro Svelte 8.1.2
+- Astro React 5.0.5
+- Astro Vue 6.0.1
 
-─ Legendapp State
-─ Jotai
-─ Nanostores
-─ Valtio
-─ Zustand
-─ Redux
+- Legendapp State
+- Jotai
+- Nanostores
+- Valtio
+- Zustand
+- Redux
 
-─ Valibot
+- Valibot
 
 ## Experiments
 
