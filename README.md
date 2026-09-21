@@ -33,6 +33,9 @@
 - 各フレームワークの状態管理（外部ライブラリを含む）の伝播速度計測
 - Solid / Svelte の Context を Setter / Getter 化
 
+なお、状態管理の伝播速度計測において Pinia を不参加としているのは、他が Astro client:only で分離して動作している構造上、Pinia は合わなかったためです。
+同様の理由により Redux も不参加としています。
+
 ## Related Articles
 
 - [Astro 上の Solid / Svelte / Vue にグローバルストアを持たせたい](https://wings.hatenablog.com/entry/AstroGlobalStores)
