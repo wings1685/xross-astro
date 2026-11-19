@@ -32,6 +32,7 @@
 - 各フレームワーク標準機能のみを使用した、同一機能を供給するフォーム機構の考察・構築
 - 各フレームワークの状態管理（外部ライブラリを含む）の伝播速度計測
 - Solid / Svelte の Context を Setter / Getter 化
+- Qwik でのクリックイベントによる反応速度計測と比較
 
 なお、状態管理の伝播速度計測において Pinia を不参加としているのは、他が Astro client:only で分離して動作している構造上、Pinia は合わなかったためです。
 同様の理由により Redux も不参加としています。
@@ -50,6 +51,7 @@
 - [【番外編】 同一 Astro 上で Solid / Svelte / Vue / React それぞれの処理速度を計測してみた（おまけで Qwik）](https://wings.hatenablog.com/entry/benchmarkFinal)
 - [【極限編】同一 Astro 上で Solid / Svelte / Vue / React それぞれの処理速度を計測してみた（Qwik は無し）](https://wings.hatenablog.com/entry/benchmarkExtreme)
 - [SolidStart / SvelteKit / Qwik City の Context を Getter / Setter 化したかった](https://wings.hatenablog.com/entry/context)
+- [Qwik のクリックイベントはどういう書き方が速いんだろうか](https://wings.hatenablog.com/entry/qwikEventsTime)
 
 ## Folder Map
 
@@ -68,6 +70,8 @@ src/
 ├─ components/
 │ ├─ features/
 │ │ ├─ Solid/
+│ │ │ ├─ dragRace/
+│ │ │ ├─ events/
 │ │ │ ├─ form/
 │ │ │ ├─ stores/
 │ │ │ ├─ performance01/
@@ -76,6 +80,8 @@ src/
 │ │ │ ├─ performance04/
 │ │ │ ├─ dragRace/
 │ │ ├─ Svelte/
+│ │ │ ├─ dragRace/
+│ │ │ ├─ events/
 │ │ │ ├─ form/
 │ │ │ ├─ stores/
 │ │ │ ├─ performance01/
@@ -84,6 +90,8 @@ src/
 │ │ │ ├─ performance04/
 │ │ │ ├─ dragRace/
 │ │ ├─ React/
+│ │ │ ├─ dragRace/
+│ │ │ ├─ events/
 │ │ │ ├─ form/
 │ │ │ ├─ stores/
 │ │ │ ├─ performance01/
@@ -92,6 +100,8 @@ src/
 │ │ │ ├─ performance04/
 │ │ │ ├─ dragRace/
 │ │ ├─ Vue/
+│ │ │ ├─ dragRace/
+│ │ │ ├─ events/
 │ │ │ ├─ form/
 │ │ │ ├─ stores/
 │ │ │ ├─ performance01/

@@ -1,0 +1,13 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import SolidEvents from "@/components/features/Solid/events/Events";
+import SvelteEvents from "@/components/features/Svelte/events/Events.svelte";
+import VueEvents from "@/components/features/Vue/events/Events.vue";
+import ReactEvents from "@/components/features/React/events/Events";
+---
+<Layout title="Events Test">
+	<SolidEvents client:only="solid" />
+	<SvelteEvents client:only="svelte" />
+	<VueEvents client:only="vue" />
+	<ReactEvents client:only="react" />
+</Layout>
